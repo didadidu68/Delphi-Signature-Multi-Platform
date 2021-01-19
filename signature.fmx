@@ -1,0 +1,105 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 595
+  ClientWidth = 417
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 3
+  object ToolBar1: TToolBar
+    Size.Width = 417.000000000000000000
+    Size.Height = 48.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object bReset: TButton
+      Align = Left
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Position.X = 5.000000000000000000
+      Position.Y = 5.000000000000000000
+      Size.Width = 80.000000000000000000
+      Size.Height = 38.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Text = 'RESET'
+      OnClick = bResetClick
+    end
+    object bOK: TButton
+      Align = Right
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Position.X = 332.000000000000000000
+      Position.Y = 5.000000000000000000
+      Size.Width = 80.000000000000000000
+      Size.Height = 38.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'OK'
+      OnClick = bOKClick
+    end
+  end
+  object Layout1: TLayout
+    Align = Client
+    Size.Width = 417.000000000000000000
+    Size.Height = 547.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object RoundRect1: TRoundRect
+      Align = Bottom
+      Corners = []
+      Fill.Kind = None
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Position.X = 5.000000000000000000
+      Position.Y = 342.000000000000000000
+      Size.Width = 407.000000000000000000
+      Size.Height = 200.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Thickness = 2.000000000000000000
+      Stroke.Dash = Dash
+      OnMouseDown = RoundRect1MouseDown
+      OnMouseMove = RoundRect1MouseMove
+      object Path1: TPath
+        Align = Client
+        Fill.Kind = None
+        Locked = True
+        HitTest = False
+        Size.Width = 407.000000000000000000
+        Size.Height = 200.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Thickness = 2.000000000000000000
+        WrapMode = Original
+      end
+    end
+    object Rectangle1: TRectangle
+      Align = Top
+      Fill.Bitmap.WrapMode = Tile
+      Fill.Kind = Bitmap
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Position.X = 5.000000000000000000
+      Position.Y = 5.000000000000000000
+      Size.Width = 407.000000000000000000
+      Size.Height = 200.000000000000000000
+      Size.PlatformDefault = False
+    end
+  end
+  object Layout2: TLayout
+    Align = Client
+    Size.Width = 417.000000000000000000
+    Size.Height = 547.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+  end
+end
